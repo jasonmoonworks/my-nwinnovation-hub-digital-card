@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NW Innovation Hub | Jason Moon</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --primary:#004A4A;
+  --secondary:#00A786;
+  --accent:#17B39C;
+  --gold:#F3C139;
+  --light:#F5FAF9;
+  --text:#243434;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Open Sans',sans-serif;
+  color:var(--text);
+  background:#eef5f4;
+  line-height:1.6;
+}
+
+.hero{
+  background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+  color:white;
+  padding:60px 24px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:40px;
+  align-items:center;
+}
+
+.hero h1{
+  font-family:'Poppins',sans-serif;
+  font-size:4rem;
+  line-height:1;
+  margin-bottom:16px;
+}
+
+.hero h2{
+  font-size:1.3rem;
+  font-weight:600;
+  margin-bottom:18px;
+}
+
+.tagline{
+  font-size:1.15rem;
+  color:#d8f3ee;
+  margin-bottom:20px;
+}
+
+.headshot{
+  width:100%;
+  border-radius:24px;
+  box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.cta-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:20px;
+}
+
+.btn{
+  text-decoration:none;
+  background:white;
+  color:var(--primary);
+  padding:12px 20px;
+  border-radius:10px;
+  font-weight:700;
+}
+
+.btn-secondary{
+  background:var(--gold);
+}
+
+section{
+  padding:60px 24px;
+}
+
+.section-title{
+  font-family:'Poppins',sans-serif;
+  color:var(--primary);
+  font-size:2rem;
+  margin-bottom:18px;
+}
+
+.about{
+  background:white;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:24px;
+}
+
+.card{
+  background:white;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 4px 20px rgba(0,0,0,.06);
+}
+
+.card h3{
+  color:var(--primary);
+  font-family:'Poppins',sans-serif;
+  margin-bottom:10px;
+}
+
+.resources{
+  background:#f7fbfb;
+}
+
+.resource-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.resource{
+  background:white;
+  padding:20px;
+  border-radius:16px;
+  border-left:5px solid var(--accent);
+}
+
+.resource a{
+  color:var(--secondary);
+  text-decoration:none;
+  font-weight:700;
+}
+
+.contact{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+}
+
+.contact h2{
+  color:white;
+}
+
+.contact-links{
+  margin-top:20px;
+}
+
+.contact-links a{
+  color:white;
+  text-decoration:none;
+  display:block;
+  margin:10px 0;
+}
+
+.footer{
+  text-align:center;
+  padding:24px;
+  background:#003939;
+  color:white;
+}
+
+@media(max-width:800px){
+
+.hero-grid{
+  grid-template-columns:1fr;
+}
+
+.hero h1{
+  font-size:3rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div>
+
+<h1>NW Innovation Hub</h1>
+
+<h2>Jason Moon | Hub Director</h2>
+
+<p class="tagline">
+Where Northwest Oregon's Innovators Find Tools,
+Connections, and Momentum.
+</p>
+
+<p>
+The Northwest Innovation Hub supports innovation-based
+entrepreneurs and traded-sector businesses across
+Clatsop, Columbia, and Tillamook Counties.
+</p>
+
+<div class="cta-row">
+
+<a href="https://nwinnovationhub.com" class="btn">
+Visit Website
+</a>
+
+<a href="tel:5036217302" class="btn btn-secondary">
+Call Jason
+</a>
+
+</div>
+
+</div>
+
+<div>
+<img src="DSC_8790.jpg" alt="Jason Moon" class="headshot">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<div class="container">
+
+<h2 class="section-title">
+Helping Founders Navigate the Ecosystem
+</h2>
+
+<p>
+The NW Innovation Hub exists to make it easier for founders
+to access the right resources at the right time without
+having to navigate Oregon's entrepreneurial ecosystem alone.
+Whether you're exploring an idea, launching a company,
+seeking capital, or preparing to scale, we're here to help.
+</p>
+
+</div>
+
+</section>
+
+<section class="resources">
+
+<div class="container">
+
+<h2 class="section-title">
+Founder Resources
+</h2>
+
+<div class="resource-grid">
+
+<div class="resource">
+<h3>1:1 Founder Support</h3>
+<p>Business strategy, referrals, ecosystem navigation and growth planning.</p>
+</div>
+
+<div class="resource">
+<h3>Access to Capital</h3>
+<p>Connections to lenders, investors, grants and funding pathways.</p>
+</div>
+
+<div class="resource">
+<h3>Events & Networking</h3>
+<p>Mixers, workshops, PubTalks and founder gatherings.</p>
+</div>
+
+<div class="resource">
+<h3>Technical Assistance</h3>
+<p>Specialized expertise and trusted resource partners.</p>
+</div>
+
+<div class="resource">
+<h3>Oregon Entrepreneurs Network</h3>
+<a href="https://www.oen.org">
+Explore OEN →
+</a>
+</div>
+
+<div class="resource">
+<h3>Founder Intake Form</h3>
+<a href="https://nwinnovationhub.com">
+Connect with the Hub →
+</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+What We Support
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Startups</h3>
+<p>Idea-stage founders building innovative businesses.</p>
+</div>
+
+<div class="card">
+<h3>Growth Companies</h3>
+<p>Businesses preparing for expansion and investment.</p>
+</div>
+
+<div class="card">
+<h3>Rural Innovators</h3>
+<p>Entrepreneurs creating opportunity in Northwest Oregon.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="container">
+
+<h2>Let's Connect</h2>
+
+<p>
+Looking for resources, capital, mentors,
+or your next step?
+</p>
+
+<div class="contact-links">
+
+<a href="tel:5036217302">
+📞 503-621-7302
+</a>
+
+<a href="https://nwinnovationhub.com">
+🌐 nwinnovationhub.com
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="footer">
+NW Innovation Hub • In Partnership with Business Oregon & Oregon Entrepreneurs Network
+</div>
+
+</body>
+</html>
